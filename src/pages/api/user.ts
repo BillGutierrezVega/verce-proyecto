@@ -7,6 +7,16 @@ export const config = {
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (req: NextRequest) => {
   return NextResponse.json({
-    message: `Hello world ${req.url}`,
+    ok:true,
+    data: [
+        {
+            id:1,
+            name:"Bill"
+        },
+        {
+            id:2,
+            name:"valentina"
+        }
+    ],
   });
 };
